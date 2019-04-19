@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <button id='testBtn'>Test</button>
+        <h2>Enter your data here.</h2>
+        <form  id="vform" onSubmit = "return validForm()">
+            <label>First name</label></br>
+            <input type="text" id='fn' class = "input-check" /></br>
+            <div id='fn_error' class = "error-msg"></div></br>
+            <label>Last name</label></br>
+            <input type="text" id='ln' class = "input-check"/></br>
+            <div id='ln_error' class = "error-msg"></div></br>
+            <label>EGN</label></br>
+            <input type="text" id='egn'class = "input-check"/></br>
+            <div id='egn_error' class = "error-msg"></div></br>
+            <label>Age</label></br>
+            <input type="text" id='age'class = "input-check"/></br>
+            <div id='age_error' class = "error-msg"></div></br>
+            <label>Address</label></br>
+            <input type="text" id='address'class = "input-check"/></br>
+            <div id='address_error' class = "error-msg"></div></br>
+            <label>Password</label></br>
+            <input type="password" id='pass'class = "input-check"/></br>
+            <div id='pass_error' class = "error-msg"></div></br>
+            <input type='submit' id='register' value='Register' /></br>
+        </form>
+
+        <script type="text/javascript" src='./Scripts/regExp_listener.js'></script> 
+    </body>
+</html> 
+
