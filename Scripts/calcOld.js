@@ -10,7 +10,6 @@ for (i = 0; i < write.length; i++) {
     
    result.value +=  wr.currentTarget.value;
    isResult = false;
-   console.log(isResult);
   })
 }
 
@@ -35,12 +34,10 @@ function delLast()
     {
      isResult = true;   
     }    
-        console.log(isResult);
-        console.log(stop);
 }
 
 // = 
-function eqauls()
+function evaluate()
 {
         result.value = eval(result.value);
         isResult = true;

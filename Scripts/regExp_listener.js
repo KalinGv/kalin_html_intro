@@ -1,11 +1,4 @@
- //button for testing
- var testBtn = document.querySelector('#testBtn');
- testBtn.addEventListener("click", btnF, false);
- 
- function btnF()
- {
-     testBtn.innerHTML += " WORKS!";
- }
+
 
  //first name validation event
   var fn = document.querySelector('#fn');      
@@ -59,12 +52,22 @@
  var age = document.querySelector('#age');      
  var age_error = document.querySelector('#age_error'); 
  age.addEventListener('blur', ageField, false);
+ 
+
+ //reusable function for checking ranges
+ const inRange = (from, to) => value => {
+    return value >= from && value <= to
+}
 
 
+
+//age.value >= 18 && age.value <= 118
  function ageField()
  {         
-    if ((/^18$/).test(age.value) || (/^19$/).test(age.value) || (/^[2-9][0-9]$/).test(age.value) 
-    || (/^10[0-9]$/).test(age.value) || (/^11[0-8]$/).test(age.value) ) {
+    const ageCheck = inRange(18, 118);
+    const isAdult = ageCheck(age.value);
+    if (isAdult)
+    {
          age_error.innerHTML = "";     
      }
      else   {
