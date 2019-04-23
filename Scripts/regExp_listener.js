@@ -64,7 +64,9 @@
 //age.value >= 18 && age.value <= 118
  function ageField()
  {         
+
     const ageCheck = inRange(18, 118);
+
     const isAdult = ageCheck(age.value);
     if (isAdult)
     {
